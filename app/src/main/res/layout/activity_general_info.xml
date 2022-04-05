@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralInfo">
+    <TextView
+        android:id="@+id/bloodt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Type:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodt"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/Abloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/Bbloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+        <RadioButton
+            android:id="@+id/ABbloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB" />
+        <RadioButton
+            android:id="@+id/Obloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:checked="true"/>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radiog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/radiog"
+        android:layout_below="@+id/bloodt"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/prhtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="+" />
+        <RadioButton
+            android:id="@+id/nrhtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/chronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list any chronic illness you have:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:layout_below="@+id/radiog"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="Continue Signup"
+        android:layout_below="@+id/chronic"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
