@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".homepage">
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Visual Bmi here]"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/journal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:text="Journal"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/AddFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:text="Add Food"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/AddMeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddFood"
+        android:text="Add Medication"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/AddAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddMeds"
+        android:text="Add Activity"
+        android:layout_centerHorizontal="true"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

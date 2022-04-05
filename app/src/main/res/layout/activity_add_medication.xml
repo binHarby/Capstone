@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedication">
+    <EditText
+        android:id="@+id/medname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medication Name"
+        />
+    <EditText
+        android:id="@+id/quant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity (e.g 1 pill 5mg, etc)"
+        android:layout_below="@+id/medname"
+        />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What time today?"
+        android:layout_below="@+id/quant"
+        />
+    <EditText
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="for which illness?"
+        android:layout_below="@+id/time"
+        />
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Journal"
+        android:layout_below="@+id/reason"
+        />
+
+</RelativeLayout>

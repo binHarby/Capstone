@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Capstone">
         <activity
+            android:name=".AddMedication"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddFood"
+            android:exported="false" />
+        <activity
+            android:name=".Journal"
+            android:exported="false" />
+        <activity
             android:name=".homepage"
             android:exported="false" />
         <activity
